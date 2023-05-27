@@ -1,0 +1,65 @@
+     @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         background-color: rgb(206, 217, 226);
+         font-family: "poppins", sans-serif;
+     }
+
+     .container {
+         height: 100vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+     }
+
+     .calculator {
+         display: grid;
+         grid-template-columns: repeat(4, 68px);
+         background-color: #ecf0f3;
+         padding: 20px;
+         border-radius: 10px;
+         box-shadow: inset 5px 5px 12px #ffffff,
+             5px 5px 12px rgba(0, 0, 0, 0.16);
+         /* border: 1px solid black; */
+     }
+
+     input {
+         grid-column: span 4;
+         height: 70px;
+         width: 260px;
+         background-color: #ecf0f3;
+         border: none;
+         outline: none;
+         border-radius: 10px;
+         box-shadow: inset -5px -5px 12px #ffffff,
+             inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+         padding: 20px;
+         font-size: 25px;
+         text-align: end;
+         color: rgba(70, 70, 70);
+         margin: auto;
+         margin-top: 5px;
+         margin-bottom: 20px;
+     }
+
+     button {
+         height: 48px;
+         width: 48px;
+         background-color: #ecf0f3;
+         border: none;
+         outline: none;
+         border-radius: 50%;
+         box-shadow: inset -5px -5px 12px #ffffff,
+             inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+         font-size: 25px;
+         margin: 5px;
+         font-size: 18px;
+     }
+
+     button:active {
+         background-color: #9d94948f;
+     }
