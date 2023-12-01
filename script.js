@@ -5,7 +5,6 @@ result.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
     try {
       result.value = eval(result.value);
-      result.value = Number(result.value).toLocaleString();
     } catch (err) {
       alert("Invalid / Syntax Error");
     }
@@ -26,7 +25,7 @@ function AC() {
 function calculate(num) {
   try {
     result.value = eval(result.value);
-    result.value = Number(result.value).toLocaleString();
+    
   } catch (err) {
     alert("Invalid / Syntax Error");
     result.value = "";
